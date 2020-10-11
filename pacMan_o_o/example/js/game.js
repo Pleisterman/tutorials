@@ -8,6 +8,9 @@
 
         Last revision: 03-10-2020
  
+        created by: kubowania
+        Github: https://github.com/kubowania/pac-man
+ 
 */    
 
 document.addEventListener('DOMContentLoaded', () => {
