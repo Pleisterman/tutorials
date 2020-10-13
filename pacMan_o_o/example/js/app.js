@@ -32,6 +32,7 @@
         'width'     :   500,                            // integer    
         'height'    :   200                             // integer
     };                                                  // done named array
+    self.title = 'Example';                             // string
     self.modules = {};                                  // json
     // DONE MEMBERS     
 
@@ -53,6 +54,9 @@
         
         // create menu module
         self.modules['menu'] = new app.menuModule();
+        
+        // set menu title
+        self.modules['menu'].setTitle( self.title );
         
         // create next level link module
         self.modules['nextLevelLink'] = new app.nextLessonLinkModule(); 

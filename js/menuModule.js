@@ -448,6 +448,14 @@
 
         // DONE FUNCTION: menuItemClick( event: event, named array: item ) void
         };
+        self.setTitle = function( title ) {
+        // FUNCTION: setTitle( string: title ) void
+
+            // set title
+            $( '#' + self.titleOptions['id'] ).html( title );
+
+        // DONE FUNCTION: setTitle( string: title ) void
+        };
         self.debug = function( message ) {
         // FUNCTION: debug( string: message ) void
             
@@ -471,6 +479,14 @@
         
         // PUBLIC
         return {
+            
+            // FUNCTION: setTitle( string: title ) void    
+            setTitle : function( title ){
+                
+                // call internal
+                self.setTitle( title );
+                
+            }
             
         };
         // DONE PUBLIC
